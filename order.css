@@ -1,0 +1,659 @@
+.home-container {
+  background-color: #aca394;
+  min-height: 100vh;
+  /* background-size: 100%; */
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+
+.navbar-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.logo img {
+  margin-top: 20px;
+  padding-left: 50px;
+  top: 20px;
+  left: 82px;
+}
+
+.navbar-container>.menu {
+  margin-left: auto;
+  padding-left: 65px;
+  padding-right: 5%;
+  float: right;
+  width: 38%;
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Raleway;
+  font-weight: 400;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-container>.menu>a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  text-shadow: #555;
+}
+
+.menu a.active {
+  background-color: rgba(172, 163, 148, 1);
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* .container {  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.5fr 3.5fr 0.5fr;
+  gap: 1px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+} */
+
+.overlap {
+  position: absolute;
+  width: 1440px;
+  height: 891px;
+  top: 133px;
+  left: 0;
+  background-color: #f0ecea;
+}
+
+.overlap-group {
+  position: absolute;
+  width: 504px;
+  height: 694px;
+  top: 70px;
+  left: 879px;
+  background: #FFF;
+  background-size: 100% 100%;
+}
+
+/* .order {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .order .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .order .group {
+    position: absolute;
+    width: 140px;
+    height: 104px;
+    top: 20px;
+    left: 82px;
+    background-image: url(./img/logo-website-1.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .order .text-wrapper {
+    position: absolute;
+    top: 60px;
+    left: 905px;
+    font-family: "Raleway-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .order .text-wrapper-2 {
+    position: absolute;
+    top: 60px;
+    left: 1002px;
+    font-family: "Raleway-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .order .frame {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 13px 24px;
+    position: absolute;
+    top: 48px;
+    left: 1114px;
+    background-color: #aca394;
+    border-radius: 12px;
+  }
+  
+  .order .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Raleway-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .order .text-wrapper-4 {
+    position: absolute;
+    top: 60px;
+    left: 1257px;
+    font-family: "Raleway-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .order .overlap {
+    position: absolute;
+    width: 1440px;
+    height: 891px;
+    top: 133px;
+    left: 0;
+    background-color: #f0ecea;
+  }
+  
+  .order .overlap-group {
+    position: absolute;
+    width: 504px;
+    height: 694px;
+    top: 70px;
+    left: 879px;
+    background: #FFF;
+    background-size: 100% 100%;
+  }
+  
+  .order .div-wrapper {
+    display: flex;
+    width: 210px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 54px;
+    position: absolute;
+    top: 553px;
+    left: 55px;
+    background-color: #000000;
+    border-radius: 62px;
+    overflow: hidden;
+  }
+  
+  .order .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.5px;
+    font-family: "Raleway-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .order .text-wrapper-6 {
+    position: absolute;
+    width: 428px;
+    height: 28px;
+    top: 39px;
+    left: 45px;
+    font-family: "Raleway-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 64px;
+  }
+  
+  .order .frame-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    top: 128px;
+    left: 45px;
+  }
+  
+  .order .frame-2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .order .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    font-family: "Raleway-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--grey-800);
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    line-height: 14px;
+    white-space: nowrap;
+  }
+  
+  .order .text-wrapper-8 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Proxima Nova-Semibold", Helvetica;
+    font-weight: 400;
+    color: #d95117;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .order .frame-3 {
+    display: flex;
+    width: 402px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    position: absolute;
+    top: 156px;
+    left: 44px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: var(--grey-300);
+    box-shadow: 0px 0px 4px #17191c0d;
+  }
+  
+  .order .frame-4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--grey-100);
+    border-radius: 4px;
+  }
+  
+  .order .text-wrapper-9 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Proxima Nova-Semibold", Helvetica;
+    font-weight: 400;
+    color: var(--grey-700);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .order .vector {
+    position: relative;
+    width: 6.85px;
+    height: 6.86px;
+    margin-right: -0.6px;
+    background: #FFF;
+  }
+  
+  .order .vuesax-linear-arrow-wrapper {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0px 8px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .order .vuesax-linear-arrow {
+    position: relative;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .order .overlap-2 {
+    position: absolute;
+    width: 750px;
+    height: 684px;
+    top: 71px;
+    left: 94px;
+  }
+  
+  .order .overlap-wrapper {
+    position: absolute;
+    width: 750px;
+    height: 684px;
+    top: 0;
+    left: 0;
+  }
+  
+  .order .overlap-3 {
+    position: relative;
+    height: 684px;
+  }
+  
+  .order .overlap-4 {
+    position: relative;
+    width: 751px;
+    height: 684px;
+    left: -1px;
+  }
+  
+  .order .card-body {
+    position: absolute;
+    width: 751px;
+    height: 631px;
+    top: 53px;
+    left: 0;
+  }
+  
+  .order .card-header {
+    position: absolute;
+    width: 750px;
+    height: 54px;
+    top: 0;
+    left: 1px;
+  }
+  
+  .order .title-wrapper {
+    position: relative;
+    height: 55px;
+    background-color: #ffffff;
+    box-shadow: -1px 0px 0px #d3d3da, 1px 0px 0px #d3d3da, inset 0px 1px 0px #d3d3da, inset 0px -1px 0px #d3d3da;
+  }
+  
+  .order .title {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #343f4b;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  
+  .order .ZIP-code {
+    position: absolute;
+    width: 138px;
+    height: 74px;
+    top: 493px;
+    left: 519px;
+  }
+  
+  .order .form-field-normal {
+    position: absolute;
+    width: 136px;
+    height: 40px;
+    top: 34px;
+    left: 0;
+    background-color: #00000000;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #798697;
+    box-shadow: inset 0px 0px 0px #d7d7d9;
+  }
+  
+  .order .label {
+    width: 93px;
+    left: 0;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 12px;
+  }
+  
+  .order .span {
+    color: #475465;
+  }
+  
+  .order .text-wrapper-10 {
+    color: #d33b3e;
+  }
+  
+  .order .state {
+    position: absolute;
+    width: 154px;
+    height: 74px;
+    top: 493px;
+    left: 346px;
+  }
+  
+  .order .overlap-5 {
+    position: absolute;
+    width: 148px;
+    height: 40px;
+    top: 34px;
+    left: 0;
+    background-color: #00000000;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #798697;
+    box-shadow: inset 0px 0px 0px #d7d7d9;
+  }
+  
+  .order .selection-icon {
+    position: absolute;
+    width: 9px;
+    top: 7px;
+    left: 127px;
+    font-family: "FontAwesome-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  
+  .order .placeholder {
+    width: 141px;
+    left: 6px;
+    position: absolute;
+    top: 9px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #acb4be;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  
+  .order .p {
+    width: 101px;
+    left: 0;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 12px;
+  }
+  
+  .order .city {
+    position: absolute;
+    width: 305px;
+    height: 74px;
+    top: 493px;
+    left: 18px;
+  }
+  
+  .order .div-2 {
+    width: 303px;
+    height: 40px;
+    left: 0;
+    background-color: #00000000;
+    box-shadow: inset 0px 0px 0px #d7d7d9;
+    position: absolute;
+    top: 34px;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #798697;
+  }
+  
+  .order .email {
+    position: absolute;
+    width: 305px;
+    height: 74px;
+    top: 188px;
+    left: 17px;
+  }
+  
+  .order .phone-number {
+    position: absolute;
+    width: 307px;
+    height: 74px;
+    top: 188px;
+    left: 342px;
+  }
+  
+  .order .placeholder-2 {
+    width: 271px;
+    left: 8px;
+    position: absolute;
+    top: 9px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #acb4be;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  
+  .order .label-2 {
+    width: 146px;
+    left: 0;
+    color: #475465;
+    position: absolute;
+    top: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 12px;
+  }
+  
+  .order .first-name {
+    position: absolute;
+    width: 305px;
+    height: 74px;
+    top: 78px;
+    left: 17px;
+  }
+  
+  .order .label-3 {
+    width: 105px;
+    left: 0;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 12px;
+  }
+  
+  .order .last-name {
+    position: absolute;
+    width: 305px;
+    height: 74px;
+    top: 78px;
+    left: 342px;
+  }
+  
+  .order .label-4 {
+    width: 114px;
+    left: 1px;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 12px;
+  }
+  
+  .order .group-2 {
+    position: absolute;
+    width: 703px;
+    height: 148px;
+    top: 308px;
+    left: 18px;
+  }
+  
+  .order .address {
+    position: absolute;
+    width: 106px;
+    height: 12px;
+    top: 0;
+    left: 0;
+  }
+  
+  .order .label-5 {
+    width: 104px;
+    left: 0;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 12px;
+  }
+  
+  .order .form-field-normal-2 {
+    width: 703px;
+    height: 114px;
+    left: 1px;
+    position: absolute;
+    top: 34px;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #798697;
+  } */
+  
