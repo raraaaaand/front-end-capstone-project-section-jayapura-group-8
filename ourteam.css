@@ -157,6 +157,46 @@ img {
     line-height: normal;
     white-space: nowrap;
 }
+
+/* For smartphone*/
+@media screen and (max-width: 770px) {
+  .navbar-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 244px;
+    z-index: 2;
+  }
+  
+  .ourteam {
+    z-index: 3;
+  }
+
+  .logo img {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .navbar-container> .menu{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Raleway;
+    font-weight: 400;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    padding-right: auto;
+    width: auto;
+  }
+
+  .menu a.active {
+    padding: 10px;
+  }
+}
 /* .box{
   position: relative;
   top: 20px;
